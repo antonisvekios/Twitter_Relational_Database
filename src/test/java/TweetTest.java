@@ -10,7 +10,7 @@ public class TweetTest {
 
   private static final TwitterDatabaseAPI api = new TwitterDatabaseMysql();
 
-  public static void main(String [] args) throws IOException, SQLException{
+  public static void main(String [] args) throws IOException {
     System.out.println("Starting tweet test:");
     tweetTest();
     System.out.println("Tweet test completed");

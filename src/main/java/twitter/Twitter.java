@@ -19,20 +19,12 @@ public class Twitter {
 
     api.authenticate(url, user, password);
 
-    /*api.postTweet(new Tweet(11,"test11"));
-    api.postTweet(new Tweet(1,"test11"));
-    api.postTweet(new Tweet(11,"test1"));
-    api.postTweet(new Tweet(1,"test1"));
-    api.postTweet(new Tweet(11,"test11"));*/
+    //api.postTweet(new Tweet(1,"hello"));
+
     List<Tweet> tweets = api.getTweets(11);
     for (Tweet t: tweets) {
       System.out.println(t.toString());
     }
-
-    List<Integer> followees = api.getFollowees(6630);
-    System.out.println(followees);
-    List<Integer> followers = api.getFollowers(1);
-    System.out.println(followers);
 
     List<Tweet> tweetsTimeline = api.getTimeline(6630);
     for (Tweet t: tweetsTimeline) {

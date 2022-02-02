@@ -32,7 +32,7 @@ public class TimelineTest {
 
     int numberOfTimeLines = 0;
 
-    List<Tweet> timeline_results = new ArrayList();
+    List<Tweet> timeline_results = new ArrayList<Tweet>();
 
     // loop through each line of the file
     while (System.currentTimeMillis() < timer){
